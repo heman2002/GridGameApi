@@ -10,6 +10,9 @@
 		35CB1B681F2C9E4400CFD524 /* GridGameApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CB1B5E1F2C9E4400CFD524 /* GridGameApi.framework */; };
 		35CB1B6D1F2C9E4400CFD524 /* GridGameApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB1B6C1F2C9E4400CFD524 /* GridGameApiTests.swift */; };
 		35CB1B6F1F2C9E4400CFD524 /* GridGameApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 35CB1B611F2C9E4400CFD524 /* GridGameApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35CB1B911F2C9EF400CFD524 /* GridGameApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB1B901F2C9EF400CFD524 /* GridGameApi.swift */; };
+		3FEC23D36D315E2FD26BF45B /* Pods_GridGameApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF3E9533B05425A23FDEC42 /* Pods_GridGameApiTests.framework */; };
+		6C913F8F8D22F417D9BDB674 /* Pods_GridGameApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C2F8D907FAB4B55514DE30 /* Pods_GridGameApi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DF3E9533B05425A23FDEC42 /* Pods_GridGameApiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GridGameApiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31FA55EDCFF788323289C6BE /* Pods-GridGameApiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridGameApiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GridGameApiTests/Pods-GridGameApiTests.release.xcconfig"; sourceTree = "<group>"; };
 		35CB1B5E1F2C9E4400CFD524 /* GridGameApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GridGameApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CB1B611F2C9E4400CFD524 /* GridGameApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridGameApi.h; sourceTree = "<group>"; };
 		35CB1B621F2C9E4400CFD524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35CB1B671F2C9E4400CFD524 /* GridGameApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GridGameApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CB1B6C1F2C9E4400CFD524 /* GridGameApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridGameApiTests.swift; sourceTree = "<group>"; };
 		35CB1B6E1F2C9E4400CFD524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35CB1B901F2C9EF400CFD524 /* GridGameApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridGameApi.swift; sourceTree = "<group>"; };
+		46C2F8D907FAB4B55514DE30 /* Pods_GridGameApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GridGameApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57B84DA2C685B572F7E7AE9D /* Pods-GridGameApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridGameApi.release.xcconfig"; path = "Pods/Target Support Files/Pods-GridGameApi/Pods-GridGameApi.release.xcconfig"; sourceTree = "<group>"; };
+		626A437F980148D6A37E31A5 /* Pods-GridGameApiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridGameApiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GridGameApiTests/Pods-GridGameApiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F82FEE82942E6DCD945DCB56 /* Pods-GridGameApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridGameApi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GridGameApi/Pods-GridGameApi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C913F8F8D22F417D9BDB674 /* Pods_GridGameApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +55,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				35CB1B681F2C9E4400CFD524 /* GridGameApi.framework in Frameworks */,
+				3FEC23D36D315E2FD26BF45B /* Pods_GridGameApiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22B251BAF828340D78BC6A14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F82FEE82942E6DCD945DCB56 /* Pods-GridGameApi.debug.xcconfig */,
+				57B84DA2C685B572F7E7AE9D /* Pods-GridGameApi.release.xcconfig */,
+				626A437F980148D6A37E31A5 /* Pods-GridGameApiTests.debug.xcconfig */,
+				31FA55EDCFF788323289C6BE /* Pods-GridGameApiTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		35CB1B541F2C9E4400CFD524 = {
 			isa = PBXGroup;
 			children = (
 				35CB1B601F2C9E4400CFD524 /* GridGameApi */,
 				35CB1B6B1F2C9E4400CFD524 /* GridGameApiTests */,
 				35CB1B5F1F2C9E4400CFD524 /* Products */,
+				22B251BAF828340D78BC6A14 /* Pods */,
+				A1C58EE38A4BF30D95189F33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +98,7 @@
 			children = (
 				35CB1B611F2C9E4400CFD524 /* GridGameApi.h */,
 				35CB1B621F2C9E4400CFD524 /* Info.plist */,
+				35CB1B901F2C9EF400CFD524 /* GridGameApi.swift */,
 			);
 			path = GridGameApi;
 			sourceTree = "<group>";
@@ -84,6 +110,15 @@
 				35CB1B6E1F2C9E4400CFD524 /* Info.plist */,
 			);
 			path = GridGameApiTests;
+			sourceTree = "<group>";
+		};
+		A1C58EE38A4BF30D95189F33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46C2F8D907FAB4B55514DE30 /* Pods_GridGameApi.framework */,
+				2DF3E9533B05425A23FDEC42 /* Pods_GridGameApiTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35CB1B721F2C9E4400CFD524 /* Build configuration list for PBXNativeTarget "GridGameApi" */;
 			buildPhases = (
+				228BBEBFE8061DB45863A5A1 /* [CP] Check Pods Manifest.lock */,
 				35CB1B591F2C9E4400CFD524 /* Sources */,
 				35CB1B5A1F2C9E4400CFD524 /* Frameworks */,
 				35CB1B5B1F2C9E4400CFD524 /* Headers */,
 				35CB1B5C1F2C9E4400CFD524 /* Resources */,
+				5553AD4CF0FBBB49391E72E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35CB1B751F2C9E4400CFD524 /* Build configuration list for PBXNativeTarget "GridGameApiTests" */;
 			buildPhases = (
+				BD18BB37DBD56F4B6C8BE4DD /* [CP] Check Pods Manifest.lock */,
 				35CB1B631F2C9E4400CFD524 /* Sources */,
 				35CB1B641F2C9E4400CFD524 /* Frameworks */,
 				35CB1B651F2C9E4400CFD524 /* Resources */,
+				417855CDEDBDE6D18C4B4614 /* [CP] Embed Pods Frameworks */,
+				0CC80D09F155F4A4C5B398B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +188,7 @@
 				TargetAttributes = {
 					35CB1B5D1F2C9E4400CFD524 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					35CB1B661F2C9E4400CFD524 = {
@@ -191,11 +232,90 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CC80D09F155F4A4C5B398B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GridGameApiTests/Pods-GridGameApiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		228BBEBFE8061DB45863A5A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		417855CDEDBDE6D18C4B4614 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GridGameApiTests/Pods-GridGameApiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5553AD4CF0FBBB49391E72E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GridGameApi/Pods-GridGameApi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD18BB37DBD56F4B6C8BE4DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		35CB1B591F2C9E4400CFD524 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35CB1B911F2C9EF400CFD524 /* GridGameApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +356,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -289,6 +410,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -319,7 +441,9 @@
 		};
 		35CB1B731F2C9E4400CFD524 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F82FEE82942E6DCD945DCB56 /* Pods-GridGameApi.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,13 +455,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = himanshu.GridGameApi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		35CB1B741F2C9E4400CFD524 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57B84DA2C685B572F7E7AE9D /* Pods-GridGameApi.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,7 +482,9 @@
 		};
 		35CB1B761F2C9E4400CFD524 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 626A437F980148D6A37E31A5 /* Pods-GridGameApiTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = GridGameApiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = himanshu.GridGameApiTests;
@@ -366,7 +495,9 @@
 		};
 		35CB1B771F2C9E4400CFD524 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31FA55EDCFF788323289C6BE /* Pods-GridGameApiTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = GridGameApiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = himanshu.GridGameApiTests;
@@ -394,6 +525,7 @@
 				35CB1B741F2C9E4400CFD524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35CB1B751F2C9E4400CFD524 /* Build configuration list for PBXNativeTarget "GridGameApiTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +534,7 @@
 				35CB1B771F2C9E4400CFD524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "35CB1B5D1F2C9E4400CFD524"
-               BuildableName = "GridGameApi.framework"
-               BlueprintName = "GridGameApi"
-               ReferencedContainer = "container:GridGameApi.xcodeproj">
+               BlueprintIdentifier = "6146B40F258C7D377B1A52310C1EF30A"
+               BuildableName = "RxTest.framework"
+               BlueprintName = "RxTest"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "35CB1B661F2C9E4400CFD524"
-               BuildableName = "GridGameApiTests.xctest"
-               BlueprintName = "GridGameApiTests"
-               ReferencedContainer = "container:GridGameApi.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "35CB1B5D1F2C9E4400CFD524"
-            BuildableName = "GridGameApi.framework"
-            BlueprintName = "GridGameApi"
-            ReferencedContainer = "container:GridGameApi.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "35CB1B5D1F2C9E4400CFD524"
-            BuildableName = "GridGameApi.framework"
-            BlueprintName = "GridGameApi"
-            ReferencedContainer = "container:GridGameApi.xcodeproj">
+            BlueprintIdentifier = "6146B40F258C7D377B1A52310C1EF30A"
+            BuildableName = "RxTest.framework"
+            BlueprintName = "RxTest"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -79,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "35CB1B5D1F2C9E4400CFD524"
-            BuildableName = "GridGameApi.framework"
-            BlueprintName = "GridGameApi"
-            ReferencedContainer = "container:GridGameApi.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

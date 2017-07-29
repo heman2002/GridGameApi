@@ -1,0 +1,6 @@
+framework module Pods_GridGameApi {
+  umbrella header "Pods-GridGameApi-umbrella.h"
+
+  export *
+  module * { export * }
+}
