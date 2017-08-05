@@ -1,0 +1,10 @@
+framework module GridGameApi {
+  umbrella header "GridGameApi.h"
+
+  export *
+  module * { export * }
+}
+
+module GridGameApi.Swift {
+    header "GridGameApi-Swift.h"
+}

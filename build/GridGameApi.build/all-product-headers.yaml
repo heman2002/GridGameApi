@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/himanshusinghal/Library/Developer/Xcode/DerivedData/GridGameApi-ggcmoywrvsitvjcqiypwdpezvxha/Build/Products/Debug-iphonesimulator/GridGameApi.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GridGameApi-Swift.h",
+          'external-contents': "/Users/himanshusinghal/Library/Developer/Xcode/DerivedData/GridGameApi-ggcmoywrvsitvjcqiypwdpezvxha/Build/Products/Debug-iphonesimulator/GridGameApi.framework/Headers/GridGameApi-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GridGameApi.h",
+          'external-contents': "/Users/himanshusinghal/Desktop/GridGameApi/GridGameApi/GridGameApi.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/himanshusinghal/Library/Developer/Xcode/DerivedData/GridGameApi-ggcmoywrvsitvjcqiypwdpezvxha/Build/Products/Debug-iphonesimulator/GridGameApi.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/himanshusinghal/Desktop/GridGameApi/build/GridGameApi.build/Debug-iphonesimulator/GridGameApi.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

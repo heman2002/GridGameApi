@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "e9549844079191c0d51d74b77e8255b5"
+build_time: [555245399, 791749000]
+inputs:
+  "/Users/himanshusinghal/Desktop/GridGameApi/GridGameApi/GridGameApi.swift": !dirty [555245398, 0]

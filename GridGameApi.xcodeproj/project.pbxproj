@@ -6,11 +6,25 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		35ECCE6A1F35C70A00FBD037 /* UniversalGridGameApi */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 35ECCE6D1F35C70A00FBD037 /* Build configuration list for PBXAggregateTarget "UniversalGridGameApi" */;
+			buildPhases = (
+				35ECCE6E1F35C72D00FBD037 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UniversalGridGameApi;
+			productName = UniversalGridGameApi;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		35CB1B681F2C9E4400CFD524 /* GridGameApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CB1B5E1F2C9E4400CFD524 /* GridGameApi.framework */; };
 		35CB1B6D1F2C9E4400CFD524 /* GridGameApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB1B6C1F2C9E4400CFD524 /* GridGameApiTests.swift */; };
 		35CB1B6F1F2C9E4400CFD524 /* GridGameApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 35CB1B611F2C9E4400CFD524 /* GridGameApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35CB1B911F2C9EF400CFD524 /* GridGameApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB1B901F2C9EF400CFD524 /* GridGameApi.swift */; };
+		35ECCDBA1F35859900FBD037 /* GridGameApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CB1B901F2C9EF400CFD524 /* GridGameApi.swift */; };
 		3FEC23D36D315E2FD26BF45B /* Pods_GridGameApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF3E9533B05425A23FDEC42 /* Pods_GridGameApiTests.framework */; };
 		6C913F8F8D22F417D9BDB674 /* Pods_GridGameApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C2F8D907FAB4B55514DE30 /* Pods_GridGameApi.framework */; };
 /* End PBXBuildFile section */
@@ -195,6 +209,10 @@
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
+					35ECCE6A1F35C70A00FBD037 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 35CB1B581F2C9E4400CFD524 /* Build configuration list for PBXProject "GridGameApi" */;
@@ -211,6 +229,7 @@
 			targets = (
 				35CB1B5D1F2C9E4400CFD524 /* GridGameApi */,
 				35CB1B661F2C9E4400CFD524 /* GridGameApiTests */,
+				35ECCE6A1F35C70A00FBD037 /* UniversalGridGameApi */,
 			);
 		};
 /* End PBXProject section */
@@ -262,6 +281,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		35ECCE6E1F35C72D00FBD037 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"GridGameApi\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"GridGameApi\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/GridGameApi.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/GridGameApi.framework/Modules/GridGameApi.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/GridGameApi.framework/Modules/GridGameApi.swiftmodule\"\nfi\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/GridGameApi.framework/GridGameApi\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/GridGameApi.framework/GridGameApi\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/GridGameApi.framework/GridGameApi\"\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/GridGameApi.framework\" \"${PROJECT_DIR}\"\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"";
 		};
 		417855CDEDBDE6D18C4B4614 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -315,7 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35CB1B911F2C9EF400CFD524 /* GridGameApi.swift in Sources */,
+				35ECCDBA1F35859900FBD037 /* GridGameApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +538,20 @@
 			};
 			name = Release;
 		};
+		35ECCE6B1F35C70A00FBD037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		35ECCE6C1F35C70A00FBD037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -535,6 +581,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		35ECCE6D1F35C70A00FBD037 /* Build configuration list for PBXAggregateTarget "UniversalGridGameApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35ECCE6B1F35C70A00FBD037 /* Debug */,
+				35ECCE6C1F35C70A00FBD037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

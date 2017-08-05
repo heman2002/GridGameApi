@@ -10,12 +10,7 @@ import Foundation
 import SpriteKit
 import RxSwift
 
-public enum Direction {
-    case left,up,right,down
-}
-
-var direction:Direction = Direction.down
-
+var directions = ["37", "38", "39", "40", "Left", "Up", "Right", "Down"]
 class Grid:SKSpriteNode {
     var rows:Int!
     var cols:Int!

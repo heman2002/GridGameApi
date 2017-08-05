@@ -9,6 +9,13 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>UniversalGridGameApi.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +25,16 @@
 			<true/>
 		</dict>
 		<key>35CB1B661F2C9E4400CFD524</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>35ECCDBB1F35882A00FBD037</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>35ECCE6A1F35C70A00FBD037</key>
 		<dict>
 			<key>primary</key>
 			<true/>
